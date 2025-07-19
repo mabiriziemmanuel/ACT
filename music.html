@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ambient Audio Website</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 20vh;
+    }
+
+    #toggle-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 36px;
+      color: #ffffffcc;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #toggle-icon:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎼 Welcome</h1>
+  <p>Let the background sound set the mood.</p>
+
+  <audio id="background-audio" autoplay loop>
+    <source src="./gallery/RIGHT_SAID_FRED_STAND_UP_FOR_THE_CHAMPION.mp3" type="audio/mpeg">
+    <source src="./gallery/I've got the joy.mp3" type="audio/ogg">
+    Your browser does not support background audio.
+  </audio>
+
+  <span id="toggle-icon" class="material-icons" onclick="toggleAudio()">volume_off</span>
+
+  <script>
+    // save this code in a script.js file seperate for it to work for modern broswers
+    const audio = document.getElementById('background-audio');
+    const icon = document.getElementById('toggle-icon');
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        icon.textContent = 'volume_off';
+      } else {
+        audio.pause();
+        icon.textContent = 'volume_up';
+      }
+    }
+  </script>
+</body>
+</html>

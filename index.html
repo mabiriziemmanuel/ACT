@@ -13,9 +13,18 @@
     
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bebas+Neue&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
+    <audio id="background-audio" autoplay loop>
+    <source src="./gallery/RIGHT_SAID_FRED_STAND_UP_FOR_THE_CHAMPION.mp3" type="audio/mpeg">
+    <source src="./gallery/RIGHT_SAID_FRED_STAND_UP_FOR_THE_CHAMPION.mp3" type="audio/ogg">
+    Your browser does not support background audio.
+  </audio>
+
+  <span id="toggle-icon" class="material-icons" onclick="toggleAudio()">volume_off</span>
+
 <!--nav bar-->
 <nav class="nav-bar">
 <ul class="nav-links">
@@ -25,7 +34,8 @@
   <li class="active"><a href="aboutmarathon.html">About</a></li>
   <li class="active"><a href="#contacts">Contacts</a></li>
   <li class="active"><a href="#supponsors">Supponsors</a></li>
-  
+<h3 class="Hover"><a href="#program">See Program of the Day<i><img src="./gallery/ic_menu_forward.png" width="30" height="30"></i></a></h3>
+  <li></li>
   <li class="button "><a href="marathon_form.html">Buy Kits</a></li>
 
 </ul>
@@ -38,20 +48,24 @@
      
         <h1 id="home" class="animated-text title-poppins">A COMMUNITY TRANSFORMED MARATHON </h1>
         <div class="line"></div>
-        <p style="text-align: center;"><img src="./gallery/racers.png"" width="90" height="80"></p> 
+        <p style="text-align: center;"><img src="./gallery/racers.png" width="60" height="50"></p> 
 </h1>
         
 
-<h2 class="act"><i><img src="./gallery/ic_menu_my_calendar.png" width="50" height="50"></i>Sunday_3rd_AUG_2025  </h2>
+<h2 class="act"><i><img src="./gallery/ic_menu_my_calendar.png" width="35" height="35"></i>Sunday_3rd_AUG_2025  </h2>
  <div class="line3"></div>
 
-<h4 class="act"><i><img src="./gallery/racers.png" width="70" height="60"></i> Shall Start Over from Kyengera Ku Kasawe at 7:00a.m - In Uganda</h4> 
+<h4 class="act"><i><img src="./gallery/racers.png" width="40" height="30"></i> Shall Start Over from Kyengera AL-MUSTAFAH ISLAMIC COLLEGE formerly called Mugwanya Summit College at 7:00a.m - In Uganda</h4> 
 <div class="line2"></div>
 
 
 <p class="button1"><a href="marathon_form.html" >BUY KIT</a></p>
+
+<h5 class="Hover" style="text-align: right; padding-right: 10%;"><a href="./gallery/ACTPROGRAM.pdf" download>download Marathon day Program<i><img src="./gallery/ic_menu_forward.png" width="20" height="20"></i></a></h3>
+
 <h3 class="Hover"><a href="aboutmarathon.html">Explore more<i><img src="./gallery/ic_menu_forward.png" width="30" height="30"></i></a></h3>
 <h4 style="text-align: center; " class="Hover"><a href="#more">Continue Reading</a></h4>
+
 <p style="text-align: center;"><i><img src="./gallery/ic_menu_more.png" width="30" height="30" ></i></p>
 
 </div>
@@ -67,13 +81,32 @@
    <div class="grid1">
      <div ><img src="./gallery/wells.jpg" alt=""></div>
      <div>
-     <p> Well Construction and Health Empowerment in the Community of Nsangi, as times goes by, we shall reach wider communities in the power of the Almighty God</p>
+     <p> Well Construction and Health Empowerment in the Community of Kyengera Town Council, as times goes by, we shall reach wider communities in the power of the Almighty God</p>
   <a href="donations.html" class="button"> DONATE</a>
 </div>
       <div ><img src="./gallery/well.jpg" alt=""></div>
 
   </div>
   </section>
+
+
+<section>
+    <h1> GUEST OF HONOR</h1>
+<div class="line"></div>
+</section>
+
+<div style="width: 100%;" class="img">
+<img src="./gallery/actguest.jpg" style="width: 100%;">
+   <section id="supponsors" >
+<div>
+        
+        <h1>OWEK. Katikkiro Charles Peter Mayiga</h1>
+       <p>We thank God for Our King and Buganda Kingdom at large for giving us a Platform. It's an honor to host the Katikkiro of Buganda to inspire us. He will Set-off Runners of the ACT - Marathon 2025.      </p>
+        <a href="https://buganda.or.ug/" class="button">Read More</a> 
+    </div>
+</div>
+</section>
+
 
 <section id="supponsors" >
 <h1>Lead Supponsers</h1>
@@ -82,7 +115,7 @@
 
     <div>
         <img src="./gallery/emmapro.png">
-        <h1>Brother Mabirizi Emmanuel</h1>
+        <h1>Mabirizi Emmanuel</h1>
        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cupiditate molestias repudiandae nemo numquam maxime laboriosam voluptate placeat error dolor?
 
         </p>
@@ -186,8 +219,8 @@
       <img src="./gallery/racers.png" alt=""> <h2>Support the 3rd August 2025 Marathon by Buying Kits or Donating</h2>
       
 <div><p>Available at: </p>
-<p>15000/= Vest only </p>
-<p>20000/= Vest + Bottle</p></div>
+<p>15,000/= Vest only </p>
+<p>20,000/= Vest + Bottle</p></div>
 
     <div class=""> <p class="button1" style="background-color: darkblue;"><a href="marathon_form.html"  >SEE DETAILS <img src="./gallery/ic_menu_forward.png" width="1" height="15"></a></p>
   <p class="button1"><a href="marathon_form.html" >BUY KIT</a></p>
@@ -197,21 +230,39 @@
 
       </div>
     </section>
+
+    <section class="campaign-section" id="campaign">
+        <div class="container">
+            <h2 class="section-title">Programme of the Event</h2>
+        
+                <div class="campaign-card animate" style="text-align: center; width: 100%; height: auto;" id="program">
+            
+                        <img src="./gallery/ACTPROGRAM.jpg" alt="marathon" style="width: 100%; height: auto;">
+                        
+                   <h3 class="animated-text chat-header">Come One! Come All!</span></h3>
+                    
+                    </div>
+                    </div>
+                    
+                    </section>
+                    
 </section>
  <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Brother Mabirizi Emmanuel</h2>
+            <h2 class="section-title"> ACT Vision Bearer</h2>
             <div class="about-content">
                 <div class="about-image animate">
                     <img src="./gallery/emmapro.png" alt="Mabirizi Emmanuel" class="animate">
                 </div>
                 <div class="about-text animate-up">
-                    <h3>ACT Vision Bearer</h3>
-                    <p>Mabirizi Emmanuel is a dedicated servant leader with a vision to transform communities around him with the support of willing community members, volunteers and any other donors across the globe. He started down from earth helping very small villages blossom up by engaging people into environmental sanitation, and now he is targeting the entire Busiro East, Uganda and The world at Large. With a background in community development and youth empowerment, Emmanuel brings fresh ideas and energy to the christian empathetic landscape.</p>
-                    <p>His efforts focuses on education, healthcare, infrastructure development, and economic empowerment for all residents of Busiro East. Emmanuel believes in transparent, accountable leadership that puts the people first.</p>
-                    <p>As a Master Guide in the Seventh-day Adventist Church, Emmanuel's voluntary character is rooted in strong moral values and service to humanity. His motto "Kulwa Busiro Empya" reflects his commitment to creating a new, better Busiro East for all, relying on the community support and Donations only.</p>
-                
+                    <h3>Mabirizi Emmanuel</h3>
+                    <p>Mabirizi Emmanuel is a dedicated God natured servant leader with a vision to transform communities around him with the support of willing community members, volunteers and any other donors across the globe. He started down from earth helping very small villages blossom up by engaging people into environmental sanitation, and now he is targeting the entire Uganda, and the world at Large. With a background in community development and youth empowerment, Emmanuel brings fresh ideas and energy to an empathetic landscape.</p>
+                    <br>
+                    <p>"ACT MARATHON" is inspired by the power of collective action. We believe that citizens can drive positive change in their communities through collaborative efforts.</p>
+                    <br>
+                        <p> Our initiative, led by  Mabirizi Emmanuel, aims to harness the energy and enthusiasm of individuals from all walks of life to address critical needs, starting with access to clean water. By coming together in a marathon, we're not just promoting physical health but also community development and empowerment. ACT stands for citizens taking charge of their own development, and we're excited to see the impact we can make together." - A COMMUNITY TRANSFORMED</p>
+                <p></p>
                 </div>
             </div>
         </div>

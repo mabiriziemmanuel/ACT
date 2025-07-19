@@ -517,7 +517,7 @@ background-position: bottom;
     width: 150px;
     height: 3px;
     border-radius: 5px;
-    margin:3% auto;
+    margin:2% auto;
 background-color: crimson;}
 
 .line2{
@@ -572,7 +572,8 @@ text-align: right;
     }
          .text-container h5 {
                      font-family: 'roboto', 'Montserrat', sans-serif;
-           
+           margin-top: 5px;
+           margin-bottom: 5px;
         font-size: 2vmin;
         color: rgb(46, 33, 19);
         display: grid;
@@ -756,8 +757,8 @@ margin-top: 3%;
         position: relative;
         top: 30px;
         left: 50px;
-        width: 300px;
-        height: 290px;  
+        width: 245px;
+        height: 240px;  
     }
     .nav-links {
         flex-direction: column;
@@ -1008,4 +1009,23 @@ background-color: crimson;}
     .back-btn.active {
         right: 20px;
     }
-    
+    .img11{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+     #toggle-icon {
+      position: fixed;
+      bottom:10%;
+      left: 20px;
+      font-size: 36px;
+      color: #ffffffcc;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    #toggle-icon:hover {
+      color: #ffffff;
+    }

@@ -6,13 +6,17 @@
     if (backgroundImage && animatedText) {
       const images = [
         './gallery/see.jpg' ,             
-        './gallery/buykits.jpg',
-        './gallery/wells.jpg',    
+        './gallery/water1.jpeg',
+        
+        './gallery/wells.jpg', 
+        './gallery/water4.jpeg',   
         './gallery/see.jpg'
       ];
       const texts = [
-        'A COMMUNITY TRANSFORMED - ACT - MARATHON ',
+        'A COMMUNITY TRANSFORMED - ACT MARATHON ',
         'To Contribute Buy Kits or Donate',
+          'To Contribute Buy Kits or Donate',
+        
         'Become ACT Member to Change the World',
         'Welcome to our Website'
       ];
@@ -140,3 +144,17 @@ top: 0,
 behavior: 'smooth'
 })
 });
+
+ const audio = document.getElementById('background-audio');
+    const icon = document.getElementById('toggle-icon');
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        icon.textContent = 'volume_off';
+      } else {
+        audio.pause();
+        icon.textContent = 'volume_up';
+      }
+    }
+  
