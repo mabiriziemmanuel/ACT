@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Righteous&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
+
     <title>Marathon Kit Purchase Form</title>
   <script>        
     
@@ -13,7 +16,17 @@
     }
   </script>
     <style>
-        /* Modern styling */
+       
+       
+        :root {
+            --primary-color: #e63946;
+            --secondary-color: #2980b9;
+            --dark-color: #2b2d42;
+            --light-color: #f5f7fa;
+            --accent-color: #34495e;
+        }
+       
+       /* Modern styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -32,7 +45,7 @@
         }
         
         h1 {
-            color: #e63946;
+            color:crimson;
             text-align: center;
             margin-bottom: 10px;
         }
@@ -182,6 +195,133 @@
       margin-right: 6px;
       font-size: 20px;
     }
+
+
+       
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+        
+        .lightbox.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .lightbox-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 90%;
+            width: 500px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+         
+        /* Payment methods */
+        .payment-methods {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .payment-method {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            padding: 1rem;
+            
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .payment-method:hover {
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .payment-method i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+        
+        /* Form validation */
+        .error-message {
+            color: var(--primary-color);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        input:invalid, select:invalid {
+            border-color: var(--primary-color);
+        }
+        
+        input:invalid + .error-message, 
+        select:invalid + .error-message {
+            display: block;
+        }
+
+        .grid {
+   width: 80%;
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+    justify-content:center;
+    align-content:space-around;
+    grid-gap: 20px 40px;
+}
+
+    .grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .act {
+      font-weight: bold;
+      color: #e63946;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+.line{
+    margin-bottom: 100px;
+    width: 150px;
+    height: 3px;
+    border-radius: 5px;
+    margin:2% auto;
+background-color: crimson;}
     </style>
 </head>
 <body>
@@ -189,43 +329,65 @@
     <span class="material-icons">arrow_back</span>
     Back
   </button></div>
-  
-  
+    <div class="hero">
+        <h1>Order Your Marathon Kit</h1>
+        <p>Support the ACT Marathon by purchasing your official kit. Fill out the form below to place your order.</p>
+  <section>
+      <h1>Order/Pay For Kits</h1>
+      <div class="line"></div>
+      <div class="grid ">
+        <img src="./gallery/kit1.png" alt="" class="animate-up">
+        <img src="./gallery/kit2.jpg" alt="" class="animate-up">
+        <img src="./gallery/marathonkit.png" alt="" class="animate-up">
+      <img src="./gallery/racers.png" alt=""> <h2>Support the 3rd August 2025 Marathon by Buying Kits or Donating</h2>
+      
+<div><p>Available at: </p>
+<p style="font-weight: bolder;">15,000/= each Vest </p>
+<p style="font-weight: bolder;">20,000/= each T-Shirt</p>
+<p style="font-weight: bolder;">15,000/= each Cape</p>
+<p style="letter-spacing: 0.5vmin; font-size: 3vmin;" class="act">" Each Participant Shall receive <b>FREE</b> Water! Thanks to Ice Company "</p>
+</div>
+
+  </div>
+  </div>
+  </section>
+      <div class="line"></div>      
+
     <div class="form-container">
         <h1>Marathon Kit Purchase</h1>
-        <p class="form-intro">Fill out this form to order your official marathon kit. Delivery details will be sent to your email.</p>
+        <p class="form-intro">Fill out this form to order your official marathon kit. Delivery details will be sent to your email or phone call.</p>
         
-        <form id="marathonForm" action="mailto:info@mabiriziemmanel.com" method="POST" enctype="text/plain">
+        <form id="marathonForm"  >
             <!-- Personal Information -->
             <div class="form-group">
                 <label for="fullName" class="required">Full Name</label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input type="text" id="fullName" name="fullName" placeholder="Name entered here should match the one sending money" required>
             </div>
             
             <div class="form-group">
                 <label for="email" class="required">Email Address</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="enter your email" required>
             </div>
             
             <div class="form-group">
                 <label for="phone" class="required">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone" placeholder="enter your phone number" required>
             </div>
             
             <!-- Shipping Information -->
             <div class="form-group">
                 <label for="sub-county" class="required">Sub-county</label>
-                <input type="text" id="sub-county" name="sub-county" required>
+                <input type="text" id="sub-county" name="sub-county" placeholder="enter your sub-county" >
             </div>
             
             <div class="form-group">
                 <label for="village" class="required">Village</label>
-                <input type="text" id="village" name="village" required>
+                <input type="text" id="village" name="village" placeholder="enter your current residence" required>
             </div>
             
             <!-- Kit Selection -->
             <div class="form-group">
-                <label class="required">Number of Kits
+                <label class="required">Number of Vests/Bibs (UGX 15,000 each)</label>
                     <div class="quantity-selector">
                         <button type="button" class="decrement">-</button>
                         <input type="number" name="standardKitQty" value="1" min="1" class="qty-input">
@@ -235,8 +397,8 @@
                 </div>
                 <!-- Size Selection -->
             <div class="form-group">
-                <label for="shirtSize" class="required">T-Shirt Size</label>
-                <select id="shirtSize" name="shirtSize" required>
+                <label for="shirtSize" class="required">T-Shirt Size  (UGX 20,000 each) </label>
+                <select id="shirtSize" name="shirtSize" >
                     <option value="">Select size</option>
                     <option value="XS">XS</option>
                     <option value="S">S</option>
@@ -253,7 +415,7 @@
                 <div class="kit-options">
                     <label class="kit-option">
                         <input type="checkbox" name="runningCap" value="Running Cap"> 
-                        Running Cap
+                        Running Cape (UGX 15,000 each)
                         <div class="quantity-selector">
                             <button type="button" class="decrement">-</button>
                             <input type="number" name="runningCapQty" value="0" min="0" class="qty-input">
@@ -263,7 +425,7 @@
                     
                     <label class="kit-option">
                         <input type="checkbox" name="personalizedBib" value="Personalized Bib"> 
-                        Personalized Bib
+                        Personalized Bib (Extra charges may apply)
                         <div class="quantity-selector">
                             <button type="button" class="decrement">-</button>
                             <input type="number" name="personalizedBibQty" value="0" min="0" class="qty-input">
@@ -278,61 +440,164 @@
                 <label for="instructions">Special Instructions</label>
                 <textarea id="instructions" name="instructions" rows="3"></textarea>
             </div>
-            
-            <button type="submit" class="submit-btn">Complete Purchase</button>
+       <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <div class="payment-method" onclick="selectPayment('mobile-money')">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Mobile Money</p>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment('bank-transfer')">
+                                <i class="fas fa-university"></i>
+                                <p>Bank Transfer</p>
+                            </div>
+                            <div class="payment-method" onclick="selectPayment('paypal')">
+                                <i class="fab fa-paypal"></i>
+                                <p>PayPal</p>
+                            </div>
+                        </div>
+                        <select id="payment-method" required style="display: none;">
+                            <option value="">Select Payment Method</option>
+                            <option value="mobile-money">Mobile Money</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                        <div class="error-message">Please select a payment method</div>
+                    </div>
+                    
+
+            <button type="button" class="submit-btn">NEXT</button>
         </form>
+        <p class="form-intro">Please follow instructions on the next page <a href="whatsapp://send?phone=+256758296217">For Inquiries contact</a>.</p>
             </div>
     </div>
 
-    <script>
-                
+
     
+        <!-- Lightbox for payment details -->
+        <div class="lightbox" id="paymentLightbox">
+            <div class="lightbox-content">
+                <button class="close-btn" onclick="closeLightbox()">&times;</button>
+                <img src="./gallery/actsupport.png" alt="ACT" style="width: 100px; height: 100px; border-radius: 50%; margin: 1rem auto;">
+                <h3 id="thankYouMessage"></h3>
+                <div id="paymentDetails"></div>
+                <button class="btn btn-primary" style="margin-top: 1rem;" onclick="closeLightbox()">Please Continue here</button>
+            </div>
+        </div>
+   <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle quantity increment/decrement
+    document.querySelectorAll('.quantity-selector').forEach(container => {
+        const input = container.querySelector('.qty-input');
+        const increment = container.querySelector('.increment');
+        const decrement = container.querySelector('.decrement');
 
-  
-        // Quantity selector functionality
-        document.querySelectorAll('.increment').forEach(button => {
-            button.addEventListener('click', () => {
-                const input = button.parentElement.querySelector('.qty-input');
-                input.value = parseInt(input.value) + 1;
-            });
+        increment.addEventListener('click', () => {
+            input.stepUp();
         });
 
-        document.querySelectorAll('.decrement').forEach(button => {
-            button.addEventListener('click', () => {
-                const input = button.parentElement.querySelector('.qty-input');
-                if (parseInt(input.value) > (input.min || 0)) {
-                    input.value = parseInt(input.value) - 1;
-                }
-            });
-        });
-
-        // Link checkboxes to quantity inputs
-        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            const qtyInput = checkbox.closest('.kit-option').querySelector('.qty-input');
-            
-            checkbox.addEventListener('change', () => {
-                if (checkbox.checked) {
-                    qtyInput.value = 1;
-                } else {
-                    qtyInput.value = 0;
-                }
-            });
-            
-            qtyInput.addEventListener('change', () => {
-                checkbox.checked = parseInt(qtyInput.value) > 0;
-            });
-        });
-
-        // Form submission feedback
-        document.getElementById('marathonForm').addEventListener('submit', function(e) {
-            
+        decrement.addEventListener('click', () => {
+            if (parseInt(input.value) > parseInt(input.min)) {
+                input.stepDown();
             }
-            
-            alert('Thank you for your order! We will send confirmation details to your email shortly.');
         });
-        
-        
+    });
 
-    </script>
+    // Payment method selection logic (shared with other forms)
+    window.selectPayment = function(method) {
+        document.getElementById("payment-method").value = method;
+        const paymentMethods = document.querySelectorAll(".payment-method");
+        paymentMethods.forEach(pm => {
+            pm.style.borderColor = "#ddd";
+            pm.style.boxShadow = "none";
+        });
+        event.currentTarget.style.borderColor = "#2980b9";
+        event.currentTarget.style.boxShadow = "0 0 0 2px rgba(41, 128, 185, 0.3)";
+    };
+
+    // Handle form submission
+    const form = document.getElementById('marathonForm');
+    const submitBtn = document.querySelector('.submit-btn');
+
+    submitBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        // Collect form data
+        const fullName = form.fullName.value;
+        const email = form.email.value;
+        const phone = form.phone.value;
+        const subCounty = form['sub-county'].value;
+        const village = form.village.value;
+        const standardKitQty = form.standardKitQty.value;
+        const shirtSize = form.shirtSize.value || 'Not selected';
+        const runningCapChecked = form.runningCap.checked;
+        const runningCapQty = form.runningCapQty.value;
+        const personalizedBibChecked = form.personalizedBib.checked;
+        const personalizedBibQty = form.personalizedBibQty.value;
+        const instructions = form.instructions.value || 'None';
+        const paymentMethod = document.getElementById('payment-method').value;
+
+        // Compose confirmation message
+        const message = `
+            Full Name: ${fullName}
+            Email: ${email}
+            Phone: ${phone}
+            Sub-county: ${subCounty}
+            Village: ${village}
+            Vests/Bibs: ${standardKitQty}
+            Shirt Size: ${shirtSize}
+            Running Cap: ${runningCapChecked ? runningCapQty : 'None'}
+            Personalized Bib: ${personalizedBibChecked ? personalizedBibQty : 'None'}
+            Special Instructions: ${instructions}
+            Payment Method: ${paymentMethod}
+        `;
+
+        // Display instructions based on payment method
+        let paymentDetails = '';
+        switch (paymentMethod) {
+            case 'mobile-money':
+                paymentDetails = `
+                    <p>Please send your payment via Mobile Money to:</p>
+                    <p><strong>Number:</strong> +256758296217</p>
+                    <p><strong>Name:</strong> MABIRIZI EMMANUEL</p>
+                    <p><strong>Network:</strong> Airtel - Uganda</p>
+                `;
+                break;
+            case 'bank-transfer':
+                paymentDetails = `
+                    <p>Please deposit to:</p>
+                    <p><strong>Account Number:</strong> 3203875147</p>
+                    <p><strong>Name:</strong> MABIRIZI EMMANUEL</p>
+                    <p><strong>Bank:</strong> Centenary Bank</p>
+                `;
+                break;
+            case 'paypal':
+                paymentDetails = `
+                    <p>PayPal is currently not available. Please use Mobile Money or Bank Transfer.</p>
+                `;
+                break;
+            default:
+                paymentDetails = `<p>No payment method selected.</p>`;
+        }
+
+        // Inject confirmation into DOM (you need to create a lightbox container in HTML)
+        document.body.insertAdjacentHTML('beforeend', `
+            <div class="lightbox active" id="marathonLightbox">
+                <div class="lightbox-content">
+                        <h1>Thank You for your order, ${fullName}!</h1>
+                <h4> Invoice</h4>
+                    <pre>${message}</pre>
+                    ${paymentDetails}
+                    <button onclick="document.getElementById('marathonLightbox').remove()">Proceed</button>
+                </div>
+            </div>
+        `);
+    });
+});
+</script>
 </body>
 </html>

@@ -165,6 +165,12 @@
             }
         }
     </style>
+
+         <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </head>
 <body>
   <div> <button class="back-button" onclick="goBack()">
@@ -181,7 +187,7 @@
             Thank you for your submission! We've received your application and will contact you shortly.
         </div>
         
-        <form action="mailto:kavumarogers052@gmail.com" method="POST">
+        <form action="mailto:info@mabiriziemmanuel.com" method="POST">
             <!-- Personal Information -->
             <div class="form-group">
                 <label for="fullName" class="required">Full Name</label>
@@ -268,29 +274,38 @@
         </form>
     </div>
 
-    <script>
-        document.getElementById('wellsRegistrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Show success message
-            document.getElementById('successMessage').style.display = 'block';
-            
-            // Submit the form
-            this.submit();
-            
-            // Optional: Reset form after submission
-            setTimeout(() => {
-                this.reset();
-                document.getElementById('successMessage').style.display = 'none';
-            }, 5000);
-        });
-        
-        <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
 
-    </script>
+    <script>
+document.querySelector(".submit-btn").addEventListener("click", function(event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const region = document.getElementById("region").value;
+    const village = document.getElementById("village").value;
+    const currentSource = document.getElementById("currentSource").value;
+    const healthIssues = document.querySelector('input[name="healthIssues"]:checked')?.value || "";
+    const additionalInfo = document.getElementById("additionalInfo").value;
+    const communityCommitment = document.querySelector('input[name="communityCommitment"]:checked')?.value || "";
+
+    // Construct email body
+    const body = `
+        Full Name: ${fullName}
+        Email: ${email}
+        Phone: ${phone}
+        Sub-County: ${region}
+        Village/Town: ${village}
+        Water Source: ${currentSource}
+        Health Issues: ${healthIssues}
+        Additional Info: ${additionalInfo}
+        Community Commitment: ${communityCommitment}
+    `;
+
+    // Encode content for mailto
+    const mailtoLink = `mailto:info@mabiriziemmanuel.com?subject=Water%20Needs%20Application&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+});
+</script>
 </body>
 </html>
