@@ -595,9 +595,9 @@ text-align: right;
  width: 100px;
 }
 .button1:hover{
-    background-color: chartreuse;
+      transform: scale(1.05);
     border-radius: 6px;
-    width: 100px;
+
 color: crimson;
 text-align: right;
 padding: 5px;
@@ -607,10 +607,12 @@ animation: all 0.5s ease;
     padding: 1px;
 }
 .Hover:hover{
-    background-color: chartreuse;
+   transform: scale(1.05);
     border-radius: 6px;
+
 color: crimson;
-width: 80%;
+text-align: right;
+padding: 5px;
 animation: all 1s ease;
 }
 a{
@@ -658,18 +660,19 @@ align-items: center;
     right: 10%;
 }
 .nav-links:active {
-    color: crimson;
+    background-color: crimson;
     text-decoration: underline;
     font-weight: bold;
 }
 .nav-links li:hover{
-    background-color: chartreuse;
-    border-radius: 8px;
-    width: 100px;
-color: crimson;
+     transform: scale(1.91);
+    border-radius: 6px;
+
+background-color: crimson;
 text-align: right;
 padding: 5px;
-
+font-size: 5vmin;
+animation: all 1s ease;
 }
 .menu-btn {
     position: absolute;
@@ -679,8 +682,28 @@ padding: 5px;
     cursor: pointer;
     display: none;
 }
+.menu-btn:hover{
+     transform: scale(1.91);
+    border-radius: 6px;
+
+background-color: crimson;
+text-align: right;
+padding: 5px;
+font-size: 5vmin;
+animation: all 0.5s ease;
+}
 
 
+.act:hover{
+     transform: scale(1.17);
+    border-radius: 6px;
+
+background-color: crimson;
+
+padding: 5px;
+
+animation: all 1s ease-in-out;
+}
 section{
     
     width: 80%;
@@ -733,7 +756,6 @@ section div p{
     justify-content:center;
     align-content:space-around;
     grid-gap: 20px 40px;
-
 }
 
 .grid1{
@@ -1018,7 +1040,7 @@ background-color: crimson;}
 
      #toggle-icon {
       position: fixed;
-      bottom:4%;
+      bottom:10%;
       left: 20px;
       font-size: 36px;
       color: #ffffffcc;
