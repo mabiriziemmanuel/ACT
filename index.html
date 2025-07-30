@@ -1,597 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACT MARATHON 2025</title>
-    <link rel="stylesheet" href="./style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
-   <!--  <meta name="description" content="Official Websites for ACT, A COMMUNITY TRANSFORMED. Activities such as ACT Marathon launched from Uganda...">
-    <meta name="keywords" content="Marathon, Uganda Marathon, ACT, Marathon,act, act marathon,A Community Transformed Marathon, Emmanuel, Busiro East Elections, Busiro East MP 2026, Eco Heal Wooden Belts, fundraising campaign, Busiro East, Vote Busiro East">
-    <meta name="author" content="E-TECH LTD _Websites Developers 0783101345">
-    
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Bebas+Neue&family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Community Transformed Marathon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
 
+    header.background-image {
+      background-image: url('./gallery/see.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text-container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 700px;
+    }
+
+    h1.animated-text {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .line, .line3 {
+      height: 2px;
+      background: white;
+      margin: 10px auto;
+      width: 60%;
+    }
+
+    .act {
+      font-size: 1.2em;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .countdown-text {
+      font-size: 1em;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .countdown-number {
+      font-size: 1.5em;
+      display: inline;
+    }
+  </style>
 </head>
 <body>
-    <audio id="background-audio" autoplay loop>
-    <source src="./gallery/RIGHT_SAID_FRED_STAND_UP_FOR_THE_CHAMPION.mp3" type="audio/mpeg">
-    <source src="./gallery/RIGHT_SAID_FRED_STAND_UP_FOR_THE_CHAMPION.mp3" type="audio/ogg">
-    Your browser does not support background audio.
-  </audio>
-
-  <span id="toggle-icon" class="material-icons" onclick="toggleAudio()">volume_off</span>
-
-<!--nav bar-->
-<nav class="nav-bar">
-<ul class="nav-links">
-<h1> <img src="./gallery/see2.png" width="100" height="100" class="logo"></h1> 
-  
-  <li class="active" ><a href="#home" >Home</a></li>
-  <li class="active"><a href="aboutmarathon.html">About</a></li>
-  <li class="active"><a href="#contacts">Contacts</a></li>
-  <li class="active"><a href="#supponsors">Supponsors</a></li>
-<h3 class="Hover act"><a href="#program" style="font-size: 2vmin;">See Program of the Day<i><img src="./gallery/ic_menu_forward.png" width="30" height="30"></i></a></h3>
-  <li></li>
-  <li class="button "><a href="marathon_form.html">Buy Kits</a></li>
-
-</ul>
-<img src="./gallery/menu.png" alt="Menu" class="menu-btn">
-</nav>
-
-
-  <header class="background-image" style="background-image: url(./gallery/see.jpg)">
-    <div class="   text-container">
-     
-        <h1 id="home" class="animated-text title-poppins">A COMMUNITY TRANSFORMED MARATHON </h1>
-        <div class="line"></div>
-        <p style="text-align: center;"><img src="./gallery/racers.png" width="60" height="50"></p> 
-</h1>
-        
-
-<h2 class="act"><i><img src="./gallery/ic_menu_my_calendar.png" width="35" height="35"></i>Sunday_3rd_AUG_2025  </h2>
- <div class="line3"></div>
-
-<h4 class="act"><i><img src="./gallery/racers.png" width="40" height="30"></i> Shall Start Over from Kyengera AL-MUSTAFAH ISLAMIC COLLEGE formerly called Mugwanya Summit College at 7:00a.m - In Uganda</h4> 
-<div class="line2"></div>
-
-
-<div style="display: flex; flex-direction:row ; align-items: center; justify-content: space-evenly; padding: 20px;">
-    <p class="custom-btn" ><a href="donations.html" style="color:rgb(100, 246, 139)">DONATE</a></p>
-<p style="text-align: right;">
- <button class="custom-btn"><a href="marathon_form.html" class="btn btn-outline">Register here</a></button>
-</p>
-</div>
-<h5 class="Hover act" style="text-align: right; padding-right: 10%;"><a href="./gallery/ACTPROGRAM.pdf" download>download Marathon day Program<i><img src="./gallery/ic_menu_forward.png" width="20" height="20"></i></a></h3>
-
-<h3 class="Hover act"><a href="aboutmarathon.html">Explore more<i><img src="./gallery/ic_menu_forward.png" width="30" height="30"></i></a></h3>
-<h4 style="text-align: center; " class="Hover act"><a href="#more">Continue Reading</a></h4>
-
-<p style="text-align: center;"><i><img src="./gallery/ic_menu_more.png" width="30" height="30" ></i></p>
-
-</div>
-  </header> 
-  
-  <section class="container1">
-    <h1 id="more">
-    Total Transformation
-    </h1>
-    <div class="line"></div>
-    
-      <img src="./gallery/marathon1.jpg" alt="">
-   <div class="grid1">
-     <div ><img src="./gallery/wells.jpg" alt=""></div>
-     <div>
-     <p> Well Construction and Health Empowerment in the Community of Kyengera Town Council, as times goes by, we shall reach wider communities in the power of the Almighty God</p>
-  
-     <a href="donations.html" class="button"> DONATE</a>
-                        <p style="text-align: center; padding-top: 8%; font-weight: bolder;">To register for wells and ACT program, <button class="custom-btn"><a href="wells-project.html" class="btn btn-outline">Register now</a></button></p>
-
-</div>
-      <div ><img src="./gallery/well.jpg" alt=""></div>
-
-  </div>
-   <p style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto; padding: 0 20px;">Insight Video
-    <a href="https://youtu.be/H0g17Zjv-u4?si=-MWaujOLq6-i5xsK" target="_blank" style="color: #007bff; text-decoration: none;">Watch Now</a> 
-    
-  </section>
-
-
-<section>
-    <h1> GUEST OF HONOR</h1>
-<div class="line"></div>
-</section>
-
-<div style="width: 100%;" class="img">
-<img src="./gallery/actguest.jpg" style="width: 100%;">
-   <section id="supponsors" >
-<div>
-        
-        <h1>OWEK. Katikkiro Charles Peter Mayiga</h1>
-       <p>We thank God for Our King and Buganda Kingdom at large for giving us a Platform. It's an honor to host the Katikkiro of Buganda to inspire us. He will Set-off Runners of the ACT - Marathon 2025.      </p>
-        <a href="https://buganda.or.ug/" class="button">Read More</a> 
-    </div>
-</div>
-</section>
-
-
-<section id="supponsors">
-    <!-- Supponsers Section -->
-<h1 >Lead Supponsers</h1>
-<div class="line"></div>
-<div class="grid">
-
-    <div>
-        <img src="./gallery/emmapro.png">
-        <h1>Mabirizi Emmanuel</h1>
-       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, cupiditate molestias repudiandae nemo numquam maxime laboriosam voluptate placeat error dolor?
-        </p>
-        <a href="aboutEma.html" class="button">Read More</a> 
-    -->
-    </div>
-    
-        <div>
-        <img src="./gallery/icewater.png">
-        <h1>ICE WATER</h1>
-    </div>
-
-     
-    
-        <div>
-        <img src="./gallery/erimu.jpg">
-        <h1>ERIMU CO. LTD</h1>
-    </div>
-
-     
-    
-        <div>
-        <img src="./gallery/coco.jpg">
-        <h1>COCO BEACH</h1>
-    </div>
-
-
-        <div>
-        <img src="./gallery/victorjuniorschool.png">
-        <h1>Victor Junior School - Nabbingo</h1>
-    </div>
-    
-
-        <div>
-        <img src="./gallery/gms.png">
-        <h1>Grand Maria School - Nabbingo</h1>
-    </div>
-
-     <div>
-        <img src="./gallery/oaklandjuniorschool.png">
-        <h1>Oaklands Junior School</h1>
-    </div>
-
-        <div>
-        <img src="./gallery/eco1.jpg">
-        <h1>Eco Wooden Belts</h1>
-    </div>
-
-        <div>
-        <img src="./gallery/hanainternationalschool.png">
-        <h1>Hana International School</h1>
-    </div>
-
-  <div>
-     <img src="./gallery/kingscollegebuddo.png">
-        <h1>Kings College Buddo</h1>
-            </div>
-
-        <div>
-        <img src="./gallery/stmarkcollege.png">
-        <h1>St. Mark College - Namagoma</h1>
-            </div>
-           
-            
-             <div>
-        <img src="./gallery/buddoss.png">
-        <h1>Buddo Secondary School</h1>
-            </div>
-
-            <div>
-        <img src="./gallery/trinitycollege.png">
-        <h1>Trinity College Nabbingo</h1>
-            </div>
-      
-           <div>
-        <img src="./gallery/hallmak.png">
-        <h1>HallMark Construction Company</h1>
-            </div>
-
-             <div>
-        <img src="./gallery/banghafi.png">
-        <h1>Banghafi Group of Companies</h1>
-    </div>
-          
-       
-  <div>
-        <img src="./gallery/nsangiclays.png">
-        <h1>Nsangi Clays</h1>
-            </div>
- 
-             <div>
-        <img src="./gallery/briefcaseofalmighty.png">
-        <h1>BriefCase of the Almighty</h1>
-            </div>
-   
-    <div>
- <a href="ETECHdesigner.html"> 
-        <img src="./gallery/ETECH.png" style="width: 70%;">
- 
-        <h1>E-TECH</h1>
-    </a>
-        </div>
-        <div>
-        <img src="./gallery/actsupport.png">
-        <b>The need is still huge, so We cordially invite every one left who is Willing to Support this Sustainable Vision - through ACT Marathon 3rd Aug 2025</b>
-           
-    
-    </div>
-    </div>
-</section>
-            <!-- End of Supponsers Section -->
-            
-
-
-
-    <section>
-      <h1>Order For Kit</h1>
+  <header class="background-image">
+    <div class="text-container">
+      <h1 id="home" class="animated-text title-poppins">A COMMUNITY TRANSFORMED MARATHON</h1>
       <div class="line"></div>
-      <div class="grid ">
-        <img src="./gallery/kit1.png" alt="" class="animate-up">
-        <img src="./gallery/kit2.jpg" alt="" class="animate-up">
-        <img src="./gallery/marathonkit.png" alt="" class="animate-up">
-      <img src="./gallery/racers.png" alt=""> <h2>Support the 3rd August 2025 Marathon by Buying Kits or Donating</h2>
-      
-<div><p>Available at: </p>
-<p style="font-weight: bolder;">15,000/= each Vest </p>
-<p style="font-weight: bolder;">20,000/= each T-Shirt</p>
-<p style="font-weight: bolder;">15,000/= each Cape</p>
-<p style="letter-spacing: 0.5vmin; font-size: 3vmin;" class="act">" Each Participant Shall receive <b>FREE</b> Water! Thanks to Ice Company "</p>
-</div>
 
-    <div class=""> <p class="button1" style="background-color: darkblue;"><a href="marathon_form.html"  >SEE DETAILS <img src="./gallery/ic_menu_forward.png" width="1" height="15"></a></p>
-  <p class="button1"><a href="marathon_form.html" >BUY KIT</a></p>
-        <p class="button1"><a href="donations.html" > DONATE</a></p>
-                        <p style="text-align: center;">To register for wells and ACT program, <button class="custom-btn"><a href="wells-project.html" class="btn btn-outline">Register here</a></button></p>
+      <p><img src="./gallery/racers.png" width="90" height="80" alt="Racers logo"></p>
 
-      </div>
+      <h2 class="act">
+        <img src="./gallery/ic_menu_my_calendar.png" width="50" height="50" alt="Calendar icon">
+        Sunday, 3rd AUG 2025
+      </h2>
 
-      </div>
-    </section>
+      <div class="line3"></div>
+<h3>This is not the official website for ACT Marathon, Click the link or wait to be redirected automatically</h3>
+      <h4 class="act">
+        <img src="./gallery/racers.png" width="70" height="60" alt="Racer icon">
+        You’ll be redirected in <span class="countdown-number" id="countdown">7</span> seconds…
+      </h4>
 
-    <section class="campaign-section" id="campaign">
-        <div class="container">
-            <h2 class="section-title">Programme of the Event</h2>
-        
-                <div class="campaign-card animate" style="text-align: center; width: 100%; height: auto;" id="program">
-            
-                        <img src="./gallery/ACTPROGRAM.jpg" alt="marathon" style="width: 100%; height: auto;">
-                        
-                   <h3 class="animated-text chat-header">Come One! Come All!</span></h3>
-                    
-                    </div>
-                    </div>
-                    
-                    </section>
-                    
-</section>
- <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title"> ACT Vision Bearer</h2>
-            <div class="about-content">
-                <div class="about-image animate">
-                    <img src="./gallery/emmapro.png" alt="Mabirizi Emmanuel" class="animate">
-                </div>
-                <div class="about-text animate-up">
-                    <h3>Mabirizi Emmanuel</h3>
-                    <p>Mabirizi Emmanuel is a dedicated God natured servant leader with a vision to transform communities around him with the support of willing community members, volunteers and any other donors across the globe. He started down from earth helping very small villages blossom up by engaging people into environmental sanitation, and now he is targeting the entire Uganda, and the world at Large. With a background in community development and youth empowerment, Emmanuel brings fresh ideas and energy to an empathetic landscape.</p>
-                    <br>
-                    <p>"ACT MARATHON" is inspired by the power of collective action. We believe that citizens can drive positive change in their communities through collaborative efforts.</p>
-                    <br>
-                        <p> Our initiative, led by  Mabirizi Emmanuel, aims to harness the energy and enthusiasm of individuals from all walks of life to address critical needs, starting with access to clean water. By coming together in a marathon, we're not just promoting physical health but also community development and empowerment. ACT stands for citizens taking charge of their own development, and we're excited to see the impact we can make together." - A COMMUNITY TRANSFORMED</p>
-                <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
-<section class="campaign-section" id="campaign">
-        <div class="container">
-            <h2 class="section-title">Our Priorities this Year</h2>
-            <div class="campaign-grid">
-                <div class="campaign-card animate">
-                    <div class="card-image">
-                        <img src="./gallery/act2.jpg" alt="marathon">
-                    </div>
-                    <div class="card-content">
-                        <h3>Health Empowerment Marathon</h3>
-                        <p>This is a dynamic initiative designed to energize communities through movement, education, and collective action. By participating, you’re not just improving your own wellbeing; you’re helping fund local health programs and spread awareness about preventive care.
-
-                        Together, we’re proving that health is a journey best traveled side by side. Whether you’re running, volunteering, or cheering from the sidelines, your involvement fuels a brighter, healthier future for all. Join us and turn momentum into meaningful change!</p>
-                       <p>To buy marathon kits, <button class="custom-btn"><a href="marathon_form.html" class="btn btn-outline">Click here</a></button></p>
-                    </div>
-                </div>
-                
-                <div class="campaign-card animate-up">
-                    <div class="card-image">
-                        <img src="./gallery/wells.jpg" alt="wells">
-                    </div>
-                    <div class="card-content">
-                        <h3>Construction of wells</h3>
-                        <p>The impact of a single well ripples far beyond its immediate surroundings. Children spend less time fetching water and more time in school, families enjoy better health, and entire villages gain resilience against droughts. By investing in well construction, we’re not just digging holes in the ground—we’re laying the foundation for stronger, healthier, and more self-sufficient communities. Every well represents hope, dignity, and a sustainable future for generations to come.</p>
-                        <p>To register for this program, <button class="custom-btn"><a href="wells-project.html" class="btn btn-outline">Register here</a></button></p>
-                    </div>
-                </div>
-                <style>
-                    .custom-btn {
-                          background: linear-gradient(45deg, #4CAF50, #2E8B57);
-                          color: skyblue;
-                          padding: 12px 24px;
-                          border: none;
-                          border-radius: 30px;
-                          font-size: 16px;
-                          font-weight: bold;
-                          cursor: pointer;
-                          transition: all 0.3s ease;
-                          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                        }
-
-                        .custom-btn:hover {
-                          background: linear-gradient(45deg, #2E8B57, #4CAF50);
-                          transform: translateY(-2px);
-                          box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-                        }
-                </style>
-                
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contacts">
-       <div class="form-wrapper">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <div class="form-input-group">
-                <input type="text" placeholder="Your Name" id="contact-name" required>
-            </div>
-            <div class="form-input-group">
-                <input type="email" placeholder="Your Email" id="contact-email" required>
-            </div>
-            <div class="form-input-group">
-                <input type="number" placeholder="Your Phone Number" id="contact-phone" required>
-            </div>
-            <div class="form-input-group">
-                <textarea placeholder="Write your message here..." id="contact-message" required></textarea>
-            </div>
-            <div class="form-button-container">
-              <div class="g-recaptcha" data-sitekey="6LdOtgsrAAAAAEjSrb_6e9Uoz3_LNargqPsxUQII" data-action="LOGIN"></div>
-              <br/>
-                <input type="button" value="Submit" class="form-button-submit" onclick="sendEmail()">
-                <span class="form-separator">or</span>
-                <input type="button" value="Send as SMS" class="form-button-sms" onclick="sendSMS()">
-            </div>
-        </form>
-        
-        <!--whatsapp major-->
-<div class="whatsapp-container">
-    <!-- WhatsApp Icon as the Button -->
-    <div class="whatsapp-home-icon" id="whatsapp-home-icon">
-                    <i class="fab fa-whatsapp"></i>
-        <span>
-        </span>
+      <p class="countdown-text">
+        If you haven't already, you'll be sent to our official site:<br>
+        <strong><a href="https://www.togethertosave.com" style="color: #00ffff;">www.togethertosave.com</a></strong>
+      </p>
     </div>
+  </header>
 
-    <div id="whatsapp-popup">
-        <div class="chat-header">
-            <div style="display: flex; align-items: center;">
-                <img src="./gallery/actsupport.png" alt="Profile Picture"> <!-- Replace with your image URL -->
-                <span>ACT Support Center</span>
-            </div>
-                    <i class="fab fa-whatsapp" style="color:#25D366;font-size:20px"></i>
-            <span class="status"><span style="color:cyan">°</span>&nbsp;Online</span>
-            
-            <span class="close-popup" id="close-popup">&times;</span>
-        </div>
-        <div class="chat-messages" id="chat-messages">
-            <div class="message received">
-                <img src="./gallery/actsupport.png" alt="Avatar">
-                <div class="message-bubble typing" id="typing-effect">
-                    "Hi dear! Thank you for reaching out. Please share your thoughts or inquiries, and I’ll assist you with in a while..."
-                </div>
-            </div>
-        </div>
-        <div class="chat-footer">
-            <i class="fa fa-smile emoji-icon" id="emoji-icon"></i>
-            <input id="message-input" type="text" placeholder="Type a message...">
-            <button id="send-button">Send</button>
-        </div>
-        <div class="emoji-popup" id="emoji-popup">
-            <span>😊</span>
-            <span>❤️</span>
-            <span>👍</span>
-        </div>
-    </div>
-</div>
-    </div>
-     
-      </div>
-    </div>
+  <script>
+    let countdown = 10;
+    const countdownElement = document.getElementById('countdown');
 
-    </div>
-            
-         
-    </section>
-     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                  <p style="text-align: center; font-size: 18px; max-width: 800px; margin: 0 auto; padding: 0 20px;">Insight Video
-    <a href="https://youtu.be/H0g17Zjv-u4?si=-MWaujOLq6-i5xsK" target="_blank" style="color: #007bff; text-decoration: none;">Watch Now</a> 
-    
-                 <div class="social-media-links">
-                    
-      <a href="https://www.facebook.com/profile.php?id=100063638752938" target="_blank"><i class="fab fa-facebook social-media-icon"></i></a>
-      <a href="https://wa.me/256758296217?text=*Hi*%20!%20Iam%20interested%20in%20seeing%20communities%20change%20for%20better,%20I %20really%20like %20ACT's%20commitment%20towards%20the%20Communities%20and%20Busiro%20East%20at%20large!%20*I also%20heard%20your%20need%20for%20Donations,%20your%20Projects%20%20and%20many%20more!*%20%0AHere%20I%20am,%20Let%20us%20talk%20about%20" target="_blank"><i class="fab fa-whatsapp social-media-icon"></i></a>
-      <a href="https://youtu.be/p9t0g9NkFp4?si=ji_qxraK7vSm7lOp" target="_blank"><i class="fab fa-youtube social-media-icon"></i></a>
-      <a href="https://x.com/wooden_belt?t=JybEBtSL2XhdiQO35fmx_w&s=09" target="_blank"><i class="fab fa-twitter social-media-icon"></i></a>
-      <a href="#instagram" target="_blank"><i class="fab fa-instagram social-media-icon"></i></a>
-   
-    </div>
-                <div class="footer-column">
-                    <h3>About</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">News</a></li>
-                        
-                        <li><a href="#">Blog & Updates</a></li>
-                        <li><a href="#contacts">Register</a></li>
-                   
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Projects</h3>
-                    <ul class="footer-links">
-                        <li><a href="aboutmarathon.html">Marathon</a></li>
-                        <li><a href="https://mabiriziemmamuel.com/ecoheal.html">Eco Heal Wooden Belts</a></li>
-                                                
-                        <li><a href="donations.html">Donate</a></li>
-                        <li><a href="#about">Volunteer</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Contact</h3>
-                    <ul class="footer-links">
-                          <p> For Inquiries and help
-  </p>
-  
-  <p>Email:</p>
-      <p style="color:blue"> <i class="material-icons"></i> <a href="mailto:info@mabiriziemmanuel.com?subject=Contacting The ACT&body=Hi, my name is " target="_blank">info@mabiriziemmanuel.com</a></p>
-       <p>For inquiries</p>
-       <p style="color:blue"> <i class="material-icons"></i> <a href="mailto:inquiries@mabiriziemmanuel.com?subject=Contacting The ACT&body=Hi, my name is " target="_blank">inquiries@mabiriziemmanuel.com</a></p>
-      <p> Make Your Shopping  and Donation queries</p> 
-      <p style="color:blue"> <i class="material-icons"></i> <a href="mailto:shoppingcart@mabiriziemmanuel.com?subject=Contacting The ACT&body=Hi, my name is " target="_blank">shoppingcart@mabiriziemmanuel.com</a></p>
-                              <li><a href="tel:+256758296217">+256 758 296217</a></li>
-                        <li><a href="whatsapp://send?phone=+256758296217">WhatsApp</a></li>
-                        <li><a href="termsandconditions.html">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 A COMMUNITY TRANSFORMED - ACT. All rights reserved.</p>
-                <p>Website designed by: <a href="ETECHdesigner.html" target="_blank">E-TECH LTD 0783101345</a></p>
-            <div class="line"></div>
-            </div>
-        </div>
-    </footer>
- <button class="back-btn">&#8593;To Top</button> 
-<script  src="./script.js"></script>
-<script>
-  const menuBtn = document.querySelector('.menu-btn');
-  const navBar = document.querySelector('.nav-links');
-  menuBtn.addEventListener('click', ()=>{
-  navBar.classList.toggle('mobile-menu')})
-
-   // Contact Form Submission
-        const contactForm = document.getElementById('contactForm');
-        
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Validate reCAPTCHA
-            const response = grecaptcha.getResponse();
-            if (response.length === 0) {
-                alert('Please complete the reCAPTCHA');
-                return;
-            }
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send this data to your server
-            // For demo purposes, we'll just show an alert
-            alert(`Thank you, ${name}! Your message has been received. We'll contact you soon at ${email} or ${phone}.`);
-            
-            // Reset form
-            contactForm.reset();
-            grecaptcha.reset();
-        });
-        
-        // Shopping Form Submissions
-        document.getElementById('pianoForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for booking piano lessons! We will contact you shortly to confirm your schedule.');
-            shoppingModal.classList.remove('active');
-        });
-        
-        document.getElementById('beltForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your order! We will contact you shortly to confirm delivery details.');
-            shoppingModal.classList.remove('active');
-        });
-        
-        // Animate elements when they come into view
-        const animateElements = document.querySelectorAll('.animate, .animate-up');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        animateElements.forEach(element => {
-            element.style.opacity = 0;
-            if (element.classList.contains('animate-up')) {
-                element.style.transform = 'translateY(50px)';
-            }
-            observer.observe(element);
-        });
-         // Email Submission Function
-        function sendEmail() {
-            const name = document.getElementById("contact-name").value;
-            const email = document.getElementById("contact-email").value;
-            const message = document.getElementById("contact-message").value;
-
-            // Create email content
-            const subject = encodeURIComponent("A COMMUNITY TRANSFORMED @ www.mabiriziemmanuel.com/ACT");
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-
-            // Send email using mailto
-            window.open(`mailto:info@mabiriziemmanuel.com?subject=${subject}&body=${body}`);
-        }
-
-        // SMS Submission Function
-        function sendSMS() {
-            const name = document.getElementById("contact-name").value;
-            const phone = document.getElementById("contact-phone").value;
-            const message = document.getElementById("contact-message").value;
-
-            // Create SMS content
-            const smsBody = encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nMessage: ${message}`);
-
-            // Open SMS app
-            window.open(`sms:0753484060?body=${smsBody}`);
-        }
-        
-
-</script>
+    const timer = setInterval(() => {
+      countdown--;
+      countdownElement.textContent = countdown;
+      if (countdown <= 0) {
+        clearInterval(timer);
+        window.location.href = "https://www.togethertosave.com";
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
